@@ -14,6 +14,9 @@ geographic hierarchy, so that e.g. a regional health facility may be
 responsible for managing a number of health posts located at sites
 within its region etc.  An enduser of our platform may have data
 access to more than one CHO.
+
+Portions of this challenge should be accomplished in SQL, but most of
+the challenge should be done in JavaScript.
                                             
 Stage 1:
 We have schemas for a fixtures table and a user organizations table.
