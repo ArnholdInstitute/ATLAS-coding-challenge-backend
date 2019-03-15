@@ -1,20 +1,368 @@
 {
-  "fixtures": [
-    {
-      "fixture_id": 1,
-      "fixture_name": "MyCHO Head Office",
-      "parent_id": null,
-      "organization_id": 1,
-      "geom": {
-        "type": "Polygon",
-        "coordinates": [[-1.0,-1.0], [-1.0,1.0], [1.0,1.0], [1.0,-1.0]]
-        "crs": {
-          "type": "EPSG",
-          "properties": { 
-            "code": 2805
+  1: {
+    "organization_id": 1,
+    "fixtures": [
+      {
+        "fixture_id": 1,
+        "fixture_name": "MyCHO Head Office",
+        "parent_id": null,
+        "geom": {
+          "type": "Polygon",
+          "coordinates": [[-1.0,-1.0], [-1.0,1.0], [1.0,1.0], [1.0,-1.0]],
+          "crs": {
+            "type": "EPSG",
+            "properties": { 
+              "code": 4326
+            }
+          }
+        }
+      },
+      {
+        "fixture_id": 2,
+        "fixture_name": "MyCHO Region A",
+        "parent_id": 1,
+        "geom": {
+          "type": "Polygon",
+          "coordinates": [[-1.0,-1.0], [-1.0,0.0], [0.0,0.0], [0,-1.0]],
+          "crs": {
+            "type": "EPSG",
+            "properties": { 
+              "code": 4326
+            }
+          }
+        }
+      },
+      {
+        "fixture_id": 3,
+        "fixture_name": "MyCHO Region B",
+        "parent_id": 1,
+        "geom": {
+          "type": "Polygon",
+          "coordinates": [[1.0,-1.0], [1.0,0.0], [0.0,0.0], [0,-1.0]],
+          "crs": {
+            "type": "EPSG",
+            "properties": { 
+              "code": 4326
+            }
+          }
+        }
+      },
+      {
+        "fixture_id": 4,
+        "fixture_name": "MyCHO Region C",
+        "parent_id": 1,
+        "geom": {
+          "type": "Polygon",
+          "coordinates": [[-1.0,1.0], [-1.0,0.0], [0.0,0.0], [0,1.0]],
+          "crs": {
+            "type": "EPSG",
+            "properties": { 
+              "code": 4326
+            }
+          }
+        }
+      },
+      {
+        "fixture_id": 5,
+        "fixture_name": "MyCHO Region D",
+        "parent_id": 1,
+        "geom": {
+          "type": "Polygon",
+          "coordinates": [[1.0,1.0], [1.0,0.0], [0.0,0.0], [0,1.0]],
+          "crs": {
+            "type": "EPSG",
+            "properties": { 
+              "code": 4326
+            }
+          }
+        }
+      },
+      {
+        "fixture_id": 6,
+        "fixture_name": "MyCHO Health Post 1",
+        "parent_id": 2,
+        "geom": {
+          "type": "Point",
+          "coordinates": [-0.5,-0.5],
+          "crs": {
+            "type": "EPSG",
+            "properties": { 
+              "code": 4326
+            }
+          }
+        }
+      },
+      {
+        "fixture_id": 7,
+        "fixture_name": "MyCHO Health Post 2",
+        "parent_id": 3,
+        "geom": {
+          "type": "Point",
+          "coordinates": [0.5,-0.5],
+          "crs": {
+            "type": "EPSG",
+            "properties": { 
+              "code": 4326
+            }
+          }
+        }
+      },
+      {
+        "fixture_id": 8,
+        "fixture_name": "MyCHO Health Post 3",
+        "parent_id": 4,
+        "geom": {
+          "type": "Point",
+          "coordinates": [-0.5,0.5],
+          "crs": {
+            "type": "EPSG",
+            "properties": { 
+              "code": 4326
+            }
+          }
+        }
+      },
+      {
+        "fixture_id": 9,
+        "fixture_name": "MyCHO Health Post 4",
+        "parent_id": 5,
+        "geom": {
+          "type": "Point",
+          "coordinates": [0.5,0.5],
+          "crs": {
+            "type": "EPSG",
+            "properties": { 
+              "code": 4326
+            }
+          }
+        }
+      },
+      {
+        "fixture_id": 10,
+        "fixture_name": "MyCHO Health Post 5",
+        "parent_id": 5,
+        "geom": {
+          "type": "Point",
+          "coordinates": [-0.25,0.25],
+          "crs": {
+            "type": "EPSG",
+            "properties": { 
+              "code": 4326
+            }
           }
         }
       }
-    }
-  ]
+    ]
+  },
+  2: {
+    "organization_id": 2,
+    "fixtures": [
+      {
+        "fixture_id": 11,
+        "fixture_name": "OtherCHO Head Office",
+        "parent_id": null,
+        "geom": {
+          "type": "Polygon",
+          "coordinates": [[-11.0,-11.0], [-11.0,-9.0], [-9.0,-9.0], [-9.0,-11.0]],
+          "crs": {
+            "type": "EPSG",
+            "properties": { 
+              "code": 4326
+            }
+          }
+        }
+      },
+      {
+        "fixture_id": 12,
+        "fixture_name": "OtherCHO Region A",
+        "parent_id": 11,
+        "geom": {
+          "type": "Polygon",
+          "coordinates": [[-11.0,-11.0], [-11.0,-9.0], [-10.0,-9.0], [-10.0,-11.0]],
+          "crs": {
+            "type": "EPSG",
+            "properties": { 
+              "code": 4326
+            }
+          }
+        }
+      },
+      {
+        "fixture_id": 13,
+        "fixture_name": "OtherCHO Region B",
+        "parent_id": 11,
+        "geom": {
+          "type": "Polygon",
+          "coordinates": [[-10.0,-9.0], [-9.0,-9.0], [-9.0,-11.0], [-10.0,-11.0]],
+          "crs": {
+            "type": "EPSG",
+            "properties": { 
+              "code": 4326
+            }
+          }
+        }
+      },
+      {
+        "fixture_id": 14,
+        "fixture_name": "OtherCHO Health Post 1",
+        "parent_id": 12,
+        "geom": {
+          "type": "Point",
+          "coordinates": [-10.5,-10.5],
+          "crs": {
+            "type": "EPSG",
+            "properties": { 
+              "code": 4326
+            }
+          }
+        }
+      },
+      {
+        "fixture_id": 15,
+        "fixture_name": "OtherCHO Health Post 2",
+        "parent_id": 12,
+        "geom": {
+          "type": "Point",
+          "coordinates": [-10.5,-9.5],
+          "crs": {
+            "type": "EPSG",
+            "properties": { 
+              "code": 4326
+            }
+          }
+        }
+      },
+      {
+        "fixture_id": 16,
+        "fixture_name": "OtherCHO Health Post 3",
+        "parent_id": 13,
+        "geom": {
+          "type": "Point",
+          "coordinates": [-9.5,-10.5],
+          "crs": {
+            "type": "EPSG",
+            "properties": { 
+              "code": 4326
+            }
+          }
+        }
+      },
+      {
+        "fixture_id": 17,
+        "fixture_name": "OtherCHO Health Post 4",
+        "parent_id": 13,
+        "geom": {
+          "type": "Point",
+          "coordinates": [-9.5,-9.5],
+          "crs": {
+            "type": "EPSG",
+            "properties": { 
+              "code": 4326
+            }
+          }
+        }
+      },
+      {
+        "fixture_id": 18,
+        "fixture_name": "OtherCHO Health Post 5",
+        "parent_id": 13,
+        "geom": {
+          "type": "Point",
+          "coordinates": [9.5,9.5],
+          "crs": {
+            "type": "EPSG",
+            "properties": { 
+              "code": 4326
+            }
+          }
+        }
+      }
+    ]
+  },
+  3: {
+    "organization_id": 3,
+    "fixtures": [
+      {
+        "fixture_id": 19,
+        "fixture_name": "DummyCHO Head Office",
+        "parent_id": null,
+        "geom": {
+          "type": "Polygon",
+          "coordinates": [[11.0,-11.0], [11.0,-9.0], [9.0,-9.0], [9.0,-11.0]],
+          "crs": {
+            "type": "EPSG",
+            "properties": { 
+              "code": 4326
+            }
+          }
+        }
+      },
+      {
+        "fixture_id": 20,
+        "fixture_name": "DummyCHO Region A",
+        "parent_id": 19,
+        "geom": {
+          "type": "Polygon",
+          "coordinates": [[12.0,-11.0], [12.0,-9.0], [10.0,-9.0], [10.0,-11.0]],
+          "crs": {
+            "type": "EPSG",
+            "properties": { 
+              "code": 4326
+            }
+          }
+        }
+      },
+      {
+        "fixture_id": 21,
+        "fixture_name": "DummyCHO Health Post 1",
+        "parent_id": 20,
+        "geom": {
+          "type": "Point",
+          "coordinates": [10.5, -10],
+          "crs": {
+            "type": "EPSG",
+            "properties": { 
+              "code": 4326
+            }
+          }
+        }
+      },
+      {
+        "fixture_id": 22,
+        "fixture_name": "DummyCHO Health Post 2",
+        "parent_id": 20,
+        "geom": {
+          "type": "Point",
+          "coordinates": [11.5, -10],
+          "crs": {
+            "type": "EPSG",
+            "properties": { 
+              "code": 4326
+            }
+          }
+        }
+      },
+      {
+        "fixture_id": 23,
+        "fixture_name": "DummyCHO Health Post 3",
+        "parent_id": 20,
+        "geom": {
+          "type": "Point",
+          "coordinates": [9.5, -10],
+          "crs": {
+            "type": "EPSG",
+            "properties": { 
+              "code": 4326
+            }
+          }
+        }
+      },
+      {
+        "fixture_id": 24,
+        "fixture_name": "DummyCHO Health Post 4",
+        "parent_id": 20,
+        "geom": null
+      }
+    ]
+  }
 }
