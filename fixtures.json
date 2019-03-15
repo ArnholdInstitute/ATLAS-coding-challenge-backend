@@ -1,5 +1,5 @@
 {
-  1: {
+  "1": {
     "organization_id": 1,
     "fixtures": [
       {
@@ -154,7 +154,7 @@
       }
     ]
   },
-  2: {
+  "2": {
     "organization_id": 2,
     "fixtures": [
       {
@@ -279,7 +279,7 @@
       }
     ]
   },
-  3: {
+  "3": {
     "organization_id": 3,
     "fixtures": [
       {
