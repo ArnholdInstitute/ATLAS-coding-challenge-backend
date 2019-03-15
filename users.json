@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "user_id": 1,
+      "username": "MyCHOAdmin"
+    },
+    {
+      "user_id": 2,
+      "username": "OtherCHOAdmin"
+    },
+    {
+      "user_id": 3,
+      "username": "DummyCHOAdmin"
+    },
+    {
+      "user_id": 4,
+      "username": "CrossOrgResearcher"
+    }
+  ]
+}

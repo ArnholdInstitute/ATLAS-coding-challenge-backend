@@ -1,0 +1,16 @@
+{
+  "organizations": [
+    {
+      "organization_id": 1,
+      "organization_name": "MyCHO"
+    },
+    {
+      "organization_id": 2,
+      "organization_name": "OtherCHO"
+    },
+    {
+      "organization_id": 3,
+      "organization_name": "DummyCHO"
+    }
+  ]
+}

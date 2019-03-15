@@ -1,0 +1,20 @@
+{
+  "user_orgs": [
+    {
+      "user_id": 1,
+      "organizations": [1]
+    },
+    {
+      "user_id": 2,
+      "organizations": [2]
+    },
+    {
+      "user_id": 3,
+      "organizations": [3]
+    },
+    {
+      "user_id": 4,
+      "organizations": [1,2]
+    }
+  ]
+}

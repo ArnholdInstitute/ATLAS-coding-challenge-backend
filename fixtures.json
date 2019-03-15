@@ -1,0 +1,20 @@
+{
+  "fixtures": [
+    {
+      "fixture_id": 1,
+      "fixture_name": "MyCHO Head Office",
+      "parent_id": null,
+      "organization_id": 1,
+      "geom": {
+        "type": "Polygon",
+        "coordinates": [[-1.0,-1.0], [-1.0,1.0], [1.0,1.0], [1.0,-1.0]]
+        "crs": {
+          "type": "EPSG",
+          "properties": { 
+            "code": 2805
+          }
+        }
+      }
+    }
+  ]
+}
