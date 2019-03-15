@@ -19,31 +19,34 @@ Portions of this challenge should be accomplished in SQL, but most of
 the challenge should be done in JavaScript.
                                             
 Stage 1:
-We have schemas for a fixtures table and a user organizations table.
+We have schemas for a fixtures table and a user organizations table
+(see table-schemas.sql).
 Write (but do not attempt to run) SQL queries that will produce
-a list of the fixtures for a given organization name and a list of
-orgs for a given user name.
+a list of the fixtures for a given organization name, a list of
+orgs for a given user name, and a list of fixtures for a given user name.
 
 Stage 2:
-We also have a JSON file which contains fixtures data; this is keyed
-by organization id. You will note that fixtures have a "parent_id"
-field; when this is not null it corresponds to a "higher-level" fixture.
-Each organization should have exactly one fixture with a null parent_id.
-Write a function which will return a tree structure of fixtures given
-an organization id.  Each node of the tree should contain all of the
-information associated with the fixture (aside from the organization).
+We also have a JSON file which contains fixtures data (fixtures.json);
+this is keyed by organization id. You will note that fixtures have a
+"parent_id" field; when this is not null it corresponds to a 
+"higher-level" fixture. Each organization should have exactly one 
+fixture with a null parent_id. Write a function which will return a 
+tree structure of fixtures given an organization id.  Each node of the 
+tree should contain all of the information associated with the fixture
+(aside from the organization).
 
 Stage 3:
-We have a JSON file which contains user data, and a second file which
-contains user organization data. Write a function which takes a username,
-retrieves the fixture trees for all organizations the user has access to,
-and then merges the trees under a joint root node.  Ensure that the top
-node of each of the subtrees identifies which organization it comes from.
+We have a JSON file which contains user data (users.json), and a second
+file which contains user organization data (user_organizations.json).
+Write a function which takes a username, retrieves the fixture trees for
+all organizations the user has access to, and then merges the trees under
+a joint root node.  Ensure that the top node of each of the subtrees 
+identifies which organization it comes from.
+This should use the solution to Stage 2.
 
 Bonus Stage:
 Write a "validation" SQL query (using PostGIS) which identifies when
 a fixture does not lie within the boundary of the parent fixture.
 
 Bonus Bonus Stage:
-Write unit tests for all of the above, using the Jest unit
-testing framework.
+Write unit tests for Stages 2 and 3, using the Jest unit testing framework.
